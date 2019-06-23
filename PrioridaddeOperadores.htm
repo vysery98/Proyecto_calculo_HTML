@@ -1,0 +1,527 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Título 1 Car";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Título 2 Car";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Título 3 Car";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#1F3763;
+	font-weight:normal;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListBulletCxSpFirst, li.MsoListBulletCxSpFirst, div.MsoListBulletCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListBulletCxSpMiddle, li.MsoListBulletCxSpMiddle, div.MsoListBulletCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListBulletCxSpLast, li.MsoListBulletCxSpLast, div.MsoListBulletCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Texto independiente Car";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.mwe-math-mathml-inline
+	{mso-style-name:mwe-math-mathml-inline;}
+p.trt0xe, li.trt0xe, div.trt0xe
+	{mso-style-name:trt0xe;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.Ttulo1Car
+	{mso-style-name:"Título 1 Car";
+	mso-style-link:"Título 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.Ttulo2Car
+	{mso-style-name:"Título 2 Car";
+	mso-style-link:"Título 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.Ttulo3Car
+	{mso-style-name:"Título 3 Car";
+	mso-style-link:"Título 3";
+	font-family:"Calibri Light",sans-serif;
+	color:#1F3763;}
+span.TextoindependienteCar
+	{mso-style-name:"Texto independiente Car";
+	mso-style-link:"Texto independiente";}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=ES-EC link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoListParagraph style='margin-left:53.4pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:17.4pt'>&nbsp;</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b>Prioridad
+de los Operadores</b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>Los
+problemas matemáticos son realizados considerando los operadores y se los
+realiza en el orden indicado en la siguiente tabla:</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>&nbsp;</p>
+
+<div align=center>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=71 valign=top style='width:53.05pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>Prioridad</b></p>
+  </td>
+  <td width=316 valign=top style='width:237.3pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>Operador</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=71 valign=top style='width:53.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>1</b></p>
+  </td>
+  <td width=316 valign=top style='width:237.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  position:relative;top:3.0pt'><img width=25 height=19
+  src="PrioridaddeOperadores_archivos/image001.png"></span>Llaves</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=71 valign=top style='width:53.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>2</b></p>
+  </td>
+  <td width=316 valign=top style='width:237.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  position:relative;top:3.0pt'><img width=24 height=19
+  src="PrioridaddeOperadores_archivos/image002.png"></span>Corchetes</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=71 valign=top style='width:53.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>3</b></p>
+  </td>
+  <td width=316 valign=top style='width:237.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  position:relative;top:3.0pt'><img width=26 height=19
+  src="PrioridaddeOperadores_archivos/image003.png"></span>Paréntesis</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=71 valign=top style='width:53.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>4</b></p>
+  </td>
+  <td width=316 valign=top style='width:237.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  position:relative;top:3.0pt'><img width=20 height=19
+  src="PrioridaddeOperadores_archivos/image004.png"></span>Potencias y <span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  position:relative;top:3.0pt'><img width=20 height=20
+  src="PrioridaddeOperadores_archivos/image005.png"></span>raíces</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=71 valign=top style='width:53.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>5</b></p>
+  </td>
+  <td width=316 valign=top style='width:237.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;position:relative;
+  top:3.0pt'><img width=7 height=19
+  src="PrioridaddeOperadores_archivos/image006.png"></span> Multiplicación y <span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;position:relative;
+  top:3.0pt'><img width=11 height=19
+  src="PrioridaddeOperadores_archivos/image007.png"></span> división</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=71 valign=top style='width:53.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>6</b></p>
+  </td>
+  <td width=316 valign=top style='width:237.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;position:relative;
+  top:3.0pt'><img width=11 height=19
+  src="PrioridaddeOperadores_archivos/image008.png"></span> Suma y <span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;position:relative;
+  top:3.0pt'><img width=11 height=19
+  src="PrioridaddeOperadores_archivos/image009.png"></span> resta</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=71 valign=top style='width:53.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>7</b></p>
+  </td>
+  <td width=316 valign=top style='width:237.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'>Operadores de comparación<span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;position:relative;
+  top:3.0pt'><img width=92 height=19
+  src="PrioridaddeOperadores_archivos/image010.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=71 valign=top style='width:53.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>8</b></p>
+  </td>
+  <td width=316 valign=top style='width:237.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'>Operadores de
+  igualdad<span
+  style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+  position:relative;top:3.0pt'><img width=45 height=19
+  src="PrioridaddeOperadores_archivos/image011.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=71 valign=top style='width:53.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><b>9</b></p>
+  </td>
+  <td width=316 valign=top style='width:237.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph;line-height:normal'><span lang=EN-US>Operadores
+  lógicos: <i>if, and, or, else, then, until, </i>etc.</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+lang=EN-US>&nbsp;</span></b></p>
+
+<b><span lang=EN-US style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoNormal><b><span lang=EN-US>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+lang=EN-US>Ejemplo:</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Wingdings'>v<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+position:relative;top:7.0pt'><img width=245 height=28
+src="PrioridaddeOperadores_archivos/image012.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph'><b><span lang=EN-US>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-18.0pt'><span lang=ES>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+position:relative;top:3.0pt'><img width=190 height=19
+src="PrioridaddeOperadores_archivos/image013.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph'><span lang=ES>Se realizó las operaciones dentro
+del paréntesis, en este caso el producto de dos números aplicando la ley de
+signos: </span><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+position:relative;top:3.0pt'><img width=174 height=19
+src="PrioridaddeOperadores_archivos/image014.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph'><span lang=ES>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-18.0pt'><span lang=EN-US>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+position:relative;top:3.0pt'><img width=150 height=19
+src="PrioridaddeOperadores_archivos/image015.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph'><span lang=ES>Se realizó operaciones aritméticas dentro
+del paréntesis: </span><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+position:relative;top:3.0pt'><img width=192 height=19
+src="PrioridaddeOperadores_archivos/image016.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph'><span lang=ES>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-18.0pt'><span lang=EN-US>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+position:relative;top:3.0pt'><img width=145 height=19
+src="PrioridaddeOperadores_archivos/image017.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph'><span lang=ES>Se aplicó la potenciación asignada
+a cada paréntesis: </span><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+position:relative;top:3.0pt'><img width=173 height=19
+src="PrioridaddeOperadores_archivos/image018.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph'><span lang=ES>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-18.0pt'><span lang=EN-US>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+position:relative;top:3.0pt'><img width=90 height=19
+src="PrioridaddeOperadores_archivos/image019.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph'><span lang=ES>Se realizó el producto a cada
+número entre paréntesis tomando en cuenta la ley de signos y eliminando los
+paréntesis: </span><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+position:relative;top:3.0pt'><img width=214 height=19
+src="PrioridaddeOperadores_archivos/image020.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph'><span lang=ES>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-18.0pt'><span lang=EN-US>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;position:relative;
+top:3.0pt'><img width=61 height=19
+src="PrioridaddeOperadores_archivos/image021.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph'><span lang=ES>Se realizó el producto del número
+entre corchetes, tomando en cuenta la ley de signos y eliminando los corchetes:
+</span><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+position:relative;top:3.0pt'><img width=103 height=19
+src="PrioridaddeOperadores_archivos/image022.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph'><span lang=ES>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-18.0pt'><span lang=EN-US>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;position:relative;
+top:3.0pt'><img width=27 height=19
+src="PrioridaddeOperadores_archivos/image023.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph'><span lang=ES>Se realizó la suma aritmética: </span><span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif;position:relative;
+top:3.0pt'><img width=107 height=19
+src="PrioridaddeOperadores_archivos/image024.png"></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-align:justify;
+text-justify:inter-ideograph'><span lang=ES>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><u>BIBLIOGRAFÍA</u></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>http://fcasua.contad.unam.mx/apuntes/interiores/docs/98/1/mate_bas.pdf</p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-justify:inter-ideograph'>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                                                                                                             </p>
+
+</div>
+
+</body>
+
+</html>
