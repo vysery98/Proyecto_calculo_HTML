@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funciones Polinomiales</title>
+    <link rel="icon" type="image/jpg" href="../imgs/favicon.jpg" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <nav class="navbar navbar-expand-lb navbar-dark" style="background-image: url(../imgs/fondoEncabezado.jpg); background-attachment: scroll;">
+
+        <a class="navbar-brand" href="../index.html">
+            <img src="../imgs/logoUTPL.png" width="" height="50" alt="[logoUTPL]"> <strong>UNIVERSIDAD TÉCNICA PARTICULAR DE LOJA<br>Ingeniería en Ciencias de la Computación<br><br>Cálculo Diferencial</strong>
+        </a>
+
+        <!-- Botón Menú -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- Contenido UNIDAD 1 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <strong class="color-bg"><u>UNIDAD 1: Números reales</u></strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../unidad1/numeros-reales.html">Números Reales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../unidad1/prioridad-de-los-operadores.html">Prioridad de los Operadores</a>
+                    </div>
+                </li>
+                <!-- Contenido UNIDAD 2 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <strong class="color-bg"><u>UNIDAD 2: Funciones</u></strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="conceptos.html">Conceptos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="funciones-polinomiales.html">Funciones Polinomiales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="funciones-exponenciales.html">Funciones Exponenciales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="funciones-logaritmicas.html">Funciones Logarítmicas</a>
+                    </div>
+                </li>
+                <!-- Contenido UNIDAD 3 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <strong class="color-bg"><u>UNIDAD 3: Límites y Continuidad</u></strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../unidad3/definicion-propiedades.html">Definición y Propiedades</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../unidad3/limites-lat-unilat.html">Límites laterales y unilaterales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../unidad3/asintotas.html">Asíntotas verticales, horizontales y oblicuas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../unidad3/limites-racionalizacion.html">Límites por racionalización</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../unidad3/continuidad.html">Continuidad</a>
+                    </div>
+                </li>
+                <!-- Contenido UNIDAD 4 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <strong class="color-bg"><u>UNIDAD 4: Derivadas</u></strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../unidad4/definicion.html">Definición</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../unidad4/reglas.html">Reglas Básicas de la Derivación</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cuerpo -->
+
+    <body class="contenido">
+        <h3><u>Funciones Polinomiales o Polinómicas</u></h3><br>
+
+        <section class="teoria">
+            <h5 class="contenido">Una función polinómica es aquella que tiene por expresión un polinomio. En general, suelen estudiarse según el <i>grado</i> del polinomio.<br><br>El <u>dominio</u> de las funciones polinómicas son <b>todos los números reales</b>.<br><br>Las
+                funciones polinómicas son continuas en todo su dominio.<br>
+                <img src="../imgs/fPolinomica.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]">
+                <br>Se clasifican en: </h5><br>
+
+            <!-- Clasificación (enumerados) -->
+            <ol style="text-align: left">
+
+                <!-- F. Constante -->
+                <li value="1">
+                    <h5 class="enumeracion"><b>Función constante</b></h5>
+                    <br>Una función constante &fnof; es una función tal que la variable dependiente y toma el mismo valor a para cualquier elemento del dominio (variable independiente x).<br><br>En términos matemáticos, la función &fnof; es constante
+                    si para cualquier par de puntos x<sub>1</sub> y x<sub>2</sub> del dominio tales que x<sub>1</sub> &lt; x<sub>2</sub>, se cumple que &fnof;(x<sub>1</sub>) = &fnof;(x<sub>2</sub>).<br><br>La gráfica de una función constante es una recta
+                    paralela al eje de abscisas <i>X</i>.<br><br>También se puede definir una función constante a partir de la derivada. Una función &fnof; será constante si para todo punto <i>x</i> del dominio la derivada es nula, es decir &fnof;'(<i>x</i>)
+                    = 0.<br><br><img src="../imgs/fConstante.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%">
+                </li>
+
+                <!-- F. de Primer Grado -->
+                <li>
+                    <h5 class="enumeracion"><b>Funciónes de Primer Grado</b></h5>
+                    <br>Son funciones que están compuestas por un escalar que multiplica a la variable independiente más una constante. Su mayor exponente es <i>x</i> elevado a <i>1</i>.<br><br> Su representación gráfica es una recta de pendiente <i>m</i>.<br><br>La
+                    <i>m</i> es la <u>pendiente</u> y la <i>n</i> la <u>ordenada</u>, o punto en donde corta la recta &fnof; al eje de ordenadas. Según los valores de <i>m</i> y <i>n</i> existen tres tipos:
+                </li><br>
+
+                <ol style="text-align: left">
+
+                    <!-- F. Identidad -->
+                    <li value="1"><b>Función Identidad:</b><br><br>La identidad es una función lineal de pendiente <u>m = 1</u> que pasa por el origen de coordenadas, es decir, por el punto <i>(0,0)</i>. Divide el primer y el tercer cuadrante en partes iguales, o sea,
+                        es su bisectriz.<br><br>La pendiente es la inclinación con respecto al eje <i>X</i> (eje de abscisas). Al ser ésta positiva <i>(m > 0)</i>, la función es creciente.<br><br>Que la pendiente de la función identidad sea <i>m = 1</i>                        significa que, si aumentamos la <i>x</i> en una unidad, la <i>y</i> también aumenta en una unidad.<br><br>Formará un <u>ángulo de 45°</u> con cualquiera de los ejes.<br>
+                        <img src="../imgs/fIdentidad.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%">
+                    </li><br><br>
+
+                    <!-- F. Lineal -->
+                    <li><b>Función Lineal:</b><br><br>Una función lineal es una <b>función polinómica</b> de grado 1 que <u>pasa por el origen de coordenadas</u>, es decir, por el punto <u>(0,0)</u>. Son funciones rectas de la forma:<br><br>
+                        <h6 class="formula"><i>&fnof;(&xscr;) = &mscr;&xscr;</i></h6>
+                        La <b>&mscr;</b> es la <b>pendiente de la recta</b>.<br><br>La pendiente es la inclinación con respecto al eje "<i>X</i>" (eje de abscisas). Si &mscr; es positiva (&mscr; > 0), entonces la función es <b><u>creciente</u></b>. En
+                        cambio, si la &mscr; es negativa (m &lt; 0), entonces la función es decreciente.<br><br>La pendiente &mscr; significa que, si aumentamos la <i>x</i> en una unidad, la <i>y</i> aumenta en &mscr; unidades. Si la &mscr; es positiva,
+                        según aumente la <i>x</i> la <i>y</i> también irá aumentando <u>(función creciente)</u>. En cambio, si &mscr; es negativa, cuando aumenta la <i>x</i> la <i>y</i> disminuirá <u>(función decreciente)</u>.<br><br><br>
+                        <img src="../imgs/fLineal.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%">
+                    </li><br><br>
+
+                    <!-- F. Afín -->
+                    <li><b>Función Afín:</b><br><br>Una función afín es una <b>función polinómica</b> de grado 1 que <u>no pasa por el origen de coordenadas</u>, o sea, por el punto <u>(0,0)</u>.<br><br>Las funciones afines son rectas definidas por la siguiente
+                        fórmula <br><br>
+                        <h6 class="formula"><i>&fnof;(&xscr;) = &mscr;&xscr; + &nscr;</i></h6>
+                        <b>Donde:</b> &mscr; y &nscr; son <b>diferentes de cero</b>.<br><br>La <b>&mscr;</b> es la <b>pendiente de la recta</b>.<br><br>La pendiente es la inclinación con respecto al eje "<i>X</i>" (eje de abscisas). Si &mscr; es positiva
+                        (&mscr; > 0), entonces la función es <b><u>creciente</u></b>. En cambio, si la &mscr; es negativa (m &lt; 0), entonces la función es decreciente.<br><br>La pendiente &mscr; significa que, si aumentamos la <i>x</i> en una unidad,
+                        la <i>y</i> aumenta en &mscr; unidades. Si la &mscr; es positiva, según aumente la <i>x</i> la <i>y</i> también irá aumentando <u>(función creciente)</u>. En cambio, si &mscr; es negativa, cuando aumenta la <i>x</i> la <i>y</i>                        disminuirá <u>(función decreciente)</u>.<br><br>La <b>ordenada en el orígen</b> es la &nscr;, es decir el punto donde la recta corta el eje de ordenadas. Las coordenadas de este punto son <i>(0 , &nscr;).</i><br><br><br>
+                        <img src="../imgs/fAfin.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%">
+                    </li><br><br>
+                </ol>
+
+                <!-- F. Cuadrática -->
+                <li>
+                    <h5 class="enumeracion"><b>Función Cuadrática</b></h5>
+                    <br>Una función cuadrática (o <b>función de segundo grado</b> es una función polinómica de grado 2, es decir el mayor exponente del polinomio &xscr; elevado a 2 <i>( &xscr; <sup>2</sup>)</i>:<br>
+                    <br>
+                    <h6 class="formula"><i>&fnof;(&xscr;) = a&xscr; <sup>2</sup> + b&xscr; + c. Siendo a &ne; 0</i></h6>
+                    Existen dos elementos fundamentales en la parábola que definen como es esta:
+                    <ol>
+                        <li value="1">
+                            El eje de simetría, que es una recta que parte de la parábola en dos ramas iguales.
+                        </li>
+                        <li>
+                            El vértice: es el punto de intersección de la parábola con el eje de simetría.
+                        </li>
+                    </ol>
+                    <br><br><br>
+                    <img src="../imgs/fCuadratica.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%"><br><br> Si a > 0, la parábola se abre hacia arriba y el vértice es el mínimo de la funcióm. En cambio si a &lt; 0,
+                    la parábola se abre hacia abajo y el vértice es el máximo de la función.
+                    <br><br>Cuanto mayor se el valor absoluto de <i>a</i>, &mid;&ascr;&mid;, más juntas estarán las ramas de la parábola.<br><br><br>
+                    <img src="../imgs/fCuadratica2.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%"><br><br> Una función cuadrática puede tener dos, una o ninguna raiz. Las raíces de una función son los elementos del
+                    dominiotal que su imágen es nula <i>&fnof;(&xscr;) = 0</i>.<br><br><br>
+                    <img src="../imgs/fCuadratica3.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%">
+                </li><br>
+
+                <!-- F. Cúbica -->
+                <li>
+                    <h5 class="enumeracion"><b>Función Cúbica</b></h5>
+                    <br>Una función cúbica (o <b>función de tercer grado</b> es una función polinómica de grado 3, es decir el mayor exponente del polinomio &xscr; elevado a 3 <i>( &xscr; <sup>3</sup>)</i>:<br>
+                    <br>
+                    <h6 class="formula"><i>&fnof;(&xscr;) = a&xscr; <sup>3</sup> + b&xscr; <sup>2</sup> + c&xscr; + d. Siendo a &ne; 0</i></h6>
+                    Una función cúbica puede tener tres, dos o una raíz. Las raíces de una función son los elementos del dominio tal que su imagen es nula (&fnof;(&xscr;) = 0).
+                    <br><br><br>
+                    <img src="../imgs/fCubica.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="30%" height="35%">
+                </li><br>
+            </ol>
+        </section>
+    </body>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+
+    <script src="main.js "></script>
+</body>
+
+</html>

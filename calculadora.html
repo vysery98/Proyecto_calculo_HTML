@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <nav class="navbar navbar-expand-lb navbar-dark" style="background-image: url(imgs/fondoEncabezado.jpg); background-attachment: scroll;">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="imgs/logoUTPL.png" width="" height="50" alt="[logoUTPL]"> <strong>UNIVERSIDAD TÉCNICA PARTICULAR DE LOJA</strong>
+        </a>
+
+        <!-- Botón Menú -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- Contenido UNIDAD 1 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <strong class="color-bg"><u>UNIDAD 1: Números reales</u></strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="unidad1/numeros-reales.html">Números Reales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="unidad1/prioridad-de-los-operadores.html">Prioridad de los Operadores</a>
+                    </div>
+                </li>
+                <!-- Contenido UNIDAD 2 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <strong class="color-bg"><u>UNIDAD 2: Funciones</u></strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="unidad2/conceptos.html">Conceptos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="unidad2/funciones-polinomiales.html">Funciones Polinomiales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="unidad2/funciones-exponenciales.html">Funciones Exponenciales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="unidad2/funciones-logaritmicas.html">Funciones Logarítmicas</a>
+                    </div>
+                </li>
+                <!-- Contenido UNIDAD 3 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <strong class="color-bg"><u>UNIDAD 3: Límites y Continuidad</u></strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="unidad3/definicion-propiedades.html">Definición y Propiedades</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="unidad3/limites-lat-unilat.html">Límites laterales y unilaterales</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="unidad3/asintotas.html">Asíntotas verticales, horizontales y oblicuas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="unidad3/limites-racionalizacion.html">Límites por racionalización</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="unidad3/continuidad.html">Continuidad</a>
+                    </div>
+                </li>
+                <!-- Contenido UNIDAD 4 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <strong class="color-bg"><u>UNIDAD 4: Derivadas</u></strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="unidad4/definicion.html">Definición</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="unidad4/reglas.html">Reglas Básicas de la Derivación</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cuerpo -->
+    <h1 class="color-rojo">Calculadora</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Ingresa valor 1</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="numero1">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Ingresa valor 2</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="numero2">
+
+                </div>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-primary" onclick="Sumar()">Calcular</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <h1 id="total" class="text-center"></h1>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

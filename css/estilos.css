@@ -1,0 +1,47 @@
+h3.enumeracion {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+h5.contenido {
+    color: rgb(46, 26, 102);
+    text-align: left;
+}
+
+h5.enumeracion {
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+h5.ejercicios {
+    color: rgba(189, 8, 8, 0.856);
+    text-align: left;
+}
+
+h5 {
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+h6.formula {
+    text-align: center;
+}
+
+.color-bg {
+    color: rgb(61, 179, 120);
+}
+
+.color-letra {
+    color: white;
+}
+
+section.teoria {
+    text-align: left;
+}
+
+body.contenido {
+    background-image: url(../imgs/fondoContenido.jpg);
+}
