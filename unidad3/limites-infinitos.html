@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Continuidad</title>
+    <title>Límites al infinito y sus asíntotas</title>
     <link rel="icon" type="image/jpg" href="../imgs/favicon.jpg" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -88,45 +88,68 @@
     <!-- Cuerpo -->
 
     <body class="contenido">
-        <h3><u>Continuidad de una Función</u></h3><br>
+        <h3><u>Límites al infinito y sus asíntotas</u></h3><br>
 
         <section class="teoria">
-            <h5 class="contenido">Una función es <b>continua</b> si su gráfica puede dibujarse de un sólo trazo.<br>Matemáticamente, una función es continua en el intervalo:<br><br><i>I = ]&ascr;, b[</i>
-                <br><br>si es continua en cualquier punto <i>c</i> del intervalo <i>I</i>. <i>lim<sub>&xscr; &rarr; c</sub> &fnof;(&xscr;) = &fnof;(c)</i>
-                <br><br>Esto quiere decir que la función es continua en <i>c</i> si la imágen del punto <i>c</i>, es decir, &fnof;(<i>c</i>), coincide con el valor que se espera que tenga &fnof;(<i>c</i>) (<u>el valor que se espera es el límite</u>).
-            </h5><br>
-
             <ol style="text-align: left">
-                <h5 class="contenido"><b>Continuidad de las funciones Básicas</b></h5><br>
-
+                <!-- Verticales -->
                 <li value="1">
-                    <h5 class="enumeracion"><b>Funciones Polinómicas</b></h5>
-                    &fnof;(&xscr;) = &ascr;<sub>m</sub> &xscr;<sup>m</sup> + &ascr;<sub>m-1</sub> &xscr;<sup>m-1</sup> + . . . + &ascr;<sub>1</sub> &xscr; + &ascr;<sub>0</sub>
-                    <br>Son continuas en todos los puntos del dominio.<br><br>
+                    <h5 class="enumeracion"><b>Límites infinitos y asíntotas verticales</b></h5>
+                    <ol style="text-align: left">
+
+                        <li value="1"><b>Caso:</b><br><br>lim<sub>&xscr; &rArr; &ascr;</sub> &fnof;(&xscr;) = + &infin; &hArr; para todo <i>A > 0</i> existe &delta; > 0 / para todo &xscr; perteneciente al E<sup>*</sup><sub>a,&delta;</sub> &fnof;(&xscr;) > A.
+                            <br><br>El límite de &fnof;(&xscr;) cuando &xscr; &rarr; &ascr; es infinito positivo, si para cualquier número positivo A (tan grande como se quiera), podemos encontrar un número &delta; tal que, para todos los &xscr; dentro
+                            del entorno reducido de &ascr; de radio &delta; se cumple que &fnof;(&xscr;) es mayor que A.
+                            <br><br>En otras palabras, si para cualquier número positivo A que consideremos, existe un entorno reducido de &ascr; donde la función vale más que A, quiere decir que &fnof;(&xscr;) puede hacerse mayor que cualquier número,
+                            con tal de que &xscr; se acerque lo suficiente a &ascr;. Por eso se dice que el límite de &fnof;(&xscr;) cuando &xscr; tiende a &ascr; es +&infin;
+                            <br><br><img src="../imgs/lim1.jpg" class="rounded mx-auto d-block" alt="[Caso]" width="25%" height="25%">
+                        </li><br><br>
+
+                        <li><b>Caso:</b><br><br>lim<sub>&xscr; &rArr; &ascr;</sub> &fnof;(&xscr;) = - &infin; &hArr; para todo <i>A > 0</i> existe &delta; > 0 / para todo &xscr; perteneciente al E<sup>*</sup><sub>a,&delta;</sub> &fnof;(&xscr;) &lt; - A.
+                            <br><br><img src="../imgs/lim2.jpg" class="rounded mx-auto d-block" alt="[Caso]" width="25%" height="25%">
+                        </li><br><br>
+
+                        <li><b>Caso:</b><br><br>lim<sub>&xscr; &rArr; +&infin;</sub> &fnof;(&xscr;) = + &infin; &hArr; para todo <i>A > 0</i> existe B > 0 / para todo &xscr; > B &fnof;(&xscr;) > A.
+                            <br><br><img src="../imgs/lim3.jpg" class="rounded mx-auto d-block" alt="[Caso]" width="25%" height="25%">
+                            <br><br>Para cualquier número positivo A (por grande que sea), es posible encontrar un número positivo B tal que para todos los &xscr; mayor que B, &fnof;(&xscr;) es mayor que A. Es decir que &fnof;(&xscr;) es mayor que A.
+                            Es decir que &fnof;(&xscr;) puede ser mayor que cualquier número, si &xscr; es lo suficientemente grande.
+                        </li><br><br>
+
+                        <li><b>Caso:</b><br><br>lim<sub>&xscr; &rArr; +&infin;</sub> &fnof;(&xscr;) = - &infin; &hArr; para todo <i>A > 0</i> existe B > 0 / para todo &xscr; > B &fnof;(&xscr;) &lt; - A.
+                            <br><br><img src="../imgs/lim4.jpg" class="rounded mx-auto d-block" alt="[Caso]" width="25%" height="25%">
+                        </li><br><br>
+
+                        <li><b>Caso:</b><br><br>lim<sub>&xscr; &rArr; -&infin;</sub> &fnof;(&xscr;) = + &infin; &hArr; para todo <i>A > 0</i> existe B > 0 / para todo &xscr; &lt; - B &fnof;(&xscr;) > A.
+                            <br><br><img src="../imgs/lim5.jpg" class="rounded mx-auto d-block" alt="[Caso]" width="25%" height="25%">
+                        </li><br><br>
+
+                        <li><b>Caso:</b><br><br>lim<sub>&xscr; &rArr; -&infin;</sub> &fnof;(&xscr;) = - &infin; &hArr; para todo <i>A > 0</i> existe B > 0 / para todo &xscr; &lt; - B &fnof;(&xscr;) &lt; - A.
+                            <br><br><img src="../imgs/lim6.jpg" class="rounded mx-auto d-block" alt="[Caso]" width="25%" height="25%">
+                        </li><br><br>
+
+                        <li><b>Caso:</b><br><br>lim<sub>&xscr; &rArr; +&infin;</sub> &fnof;(&xscr;) = b &hArr; para todo <i>&epsilon; > 0</i> existe B > 0 / para todo &xscr; > B &fnof;(&xscr;) pertenece al E<sub>b,&epsilon;</sub>.
+                            <br><br><img src="../imgs/lim7.jpg" class="rounded mx-auto d-block" alt="[Caso]" width="25%" height="25%">
+                        </li><br><br>
+
+                        <li><b>Caso:</b><br><br>lim<sub>&xscr; &rArr; -&infin;</sub> &fnof;(&xscr;) = b &hArr; para todo <i>&epsilon; > 0</i> existe B > 0 / para todo &xscr; &lt; - B &fnof;(&xscr;) pertenece al E<sub>b,&epsilon;</sub>.
+                            <br><br><img src="../imgs/lim8.jpg" class="rounded mx-auto d-block" alt="[Caso]" width="25%" height="25%">
+                        </li><br><br>
+                    </ol>
                 </li>
 
+                <!-- Horizontales -->
                 <li>
-                    <h5 class="enumeracion"><b>Funciones Racionales</b></h5>
-                    &fnof;(&xscr;) = <sup><i>h(&xscr;)</i></sup> / <sub><i>g(&xscr;)</i></sub>
-                    <br>Son continuas en todos los puntos excepto en aquellos para los que los denominadores se anulan (<i>g = 0</i>) ya que no podemos dividir entre 0.<br><br>
-                </li>
+                    <h5 class="enumeracion"><b>Límites al infinito y asíntotas horizontales</b></h5>
+                    El límite de una función &fnof;(&xscr;) cuando &xscr; tiene a +&infin;, es un número real L cuando para valores muy grandes de &xscr; los valores de la función se aproximan al número L.
+                    <br><br>De manera más precisa, diremos que la función &fnof;(&xscr;) tiene por límite L cuando &xscr; &rarr; +&infin; y lo representamos por:
+                    <br><br><b>lim<sub>x &rarr; +&infin;</sub>&fnof;(&xscr;) = L</b>
+                    <br><br>si dado un &epsilon; > 0 existen un <i>h</i> tal que si &xscr; > <i>h</i> entonces &mid;&fnof;(&xscr;) - L&mid; &lt; &epsilon;.
+                    <br><br><img src="../imgs/lim9.jpg" class="rounded mx-auto d-block" alt="[Caso]" width="35%" height="35%">
+                    <br><br>La función &fnof; tiene una asíntota horizontal en <i>y = L</i>.
+                    <br><br><img src="../imgs/lim10.jpg" class="rounded mx-auto d-block" alt="[Caso]" width="35%" height="35%">
+                </li><br>
 
-                <li>
-                    <h5 class="enumeracion"><b>Funciones Exponenciales</b></h5>
-                    &fnof;(&xscr;) = &ascr;<sup>x</sup>
-                    <br>Son continuas en todos los puntos. Los casos especiales son cuando &xscr; es negativa (&ascr; no puede ser 0) y cuando &mid;&xscr;&mid; está entre 0 y 1(es una raíz).<br><br>
-                </li>
-
-                <li>
-                    <h5 class="enumeracion"><b>Funciones Logarítmicas</b></h5>
-                    &fnof;(&xscr;) = <i>log(&xscr;)</i><br>
-                    <br>Son continuas en todos los puntos del dominio.<br>
-                </li>
-                Estos son los tipos básicos de funciones elementales y la mayoría de funciones pueden considerarse como combinaciones (composiciones) de éstas.
             </ol>
-
-            <br>
-            <h5 class="contenido"><b>Continuidad de las funciones Básicas</b></h5><br>
         </section>
     </body>
 

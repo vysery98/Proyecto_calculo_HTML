@@ -65,7 +65,7 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="asintotas.html">Asíntotas verticales, horizontales y oblicuas</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="limites-racionalizacion.html">Límites por racionalización</a>
+                        <a class="dropdown-item" href="limites-infinitos.html">Límites al infinito y sus asíntotas</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="continuidad.html">Continuidad</a>
                     </div>
@@ -88,95 +88,103 @@
     <!-- Cuerpo -->
 
     <body class="contenido">
-        <h3><u>Funciones Polinomiales o Polinómicas</u></h3><br>
+        <h3><u>Límites de una Función</u></h3><br>
 
         <section class="teoria">
-            <h5 class="contenido">Una función polinómica es aquella que tiene por expresión un polinomio. En general, suelen estudiarse según el <i>grado</i> del polinomio.<br><br>El <u>dominio</u> de las funciones polinómicas son <b>todos los números reales</b>.<br><br>Las
-                funciones polinómicas son continuas en todo su dominio.<br>
-                <img src="../imgs/fPolinomica.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]">
-                <br>Se clasifican en: </h5><br>
+            <h4>Definición de Límite de una Función</h4><br>
+            <h5 class="contenido">Sea &fnof; una función definida en todo número de algún intervalo abierto <i>I</i> que contiene a &ascr; excepto posiblemente en el número &ascr; mismo. El límite de &fnof;(&xscr;) cuando &xscr; se aproxima a &ascr; a <i>L</i>, lo cual se
+                escribe como <i>lim<sub>&xscr; &rarr; a</sub> &fnof;(&xscr;)= L</i>, si para cualquier <i>&epsilon;	> 0</i>, no importa que tan pequeña sea, existe una <i>&delta; > 0 tal que si 0 &lt; </i>&mid;<b>&xscr; - &ascr;</b>&mid;<i> &lt; &delta;</i>                entonces &mid;<i>&fnof;(&xscr;) - L</i>&mid; &lt; &epsilon;.<br>
+                <br>Esta definición indica que los valores de &fnof;(&xscr;) se aproximan al límite <i>L</i> conforme &xscr; se aproxima al número &ascr;, si el valor absoluto de la diferencia &mid;&fnof;(&xscr;)-<i>L</i>&mid; puede hacerse tan pequeña
+                como se desee tomando &xscr; suficientemente cerca de &ascr; pero no igual a &ascr;.
+                <br>En la definición no se menciona nada acerca del valor de &fnof;(&xscr;) cuando <b>&xscr; = &ascr;</b>; recordemos que la función <u>no necesita estar definida en &ascr; para que </u><b>lim<sub>x &rarr; &ascr;</sub> &fnof;(&xscr;)</b><u> exista</u>.</h5>
 
-            <!-- Clasificación (enumerados) -->
+            <br>
+
+            <!-- PROPIEDADES -->
+            <h4>Propiedades de los Límites</h4><br>
+
+            <h5 class="contenido">Las <b>propiedades de los límites</b> son operaciones que se pueden emplear para simplificar el cálculo del límite de una función más compleja. Al tratarse de operaciones, también se le denomina <b>álgebra de los límites</b>.<br><br>Sean &fnof;(&xscr;)
+                y <i>g</i>(&xscr;) dos funciones definidas en un mismo intervalo en donde está el valor &ascr; del límite y <i>k</i> una constante.<br><br></h5>
+
             <ol style="text-align: left">
 
-                <!-- F. Constante -->
+                <!-- Unicidad -->
                 <li value="1">
-                    <h5 class="enumeracion"><b>Función constante</b></h5>
-                    <br>Una función constante &fnof; es una función tal que la variable dependiente y toma el mismo valor a para cualquier elemento del dominio (variable independiente x).<br><br>En términos matemáticos, la función &fnof; es constante
-                    si para cualquier par de puntos x<sub>1</sub> y x<sub>2</sub> del dominio tales que x<sub>1</sub> &lt; x<sub>2</sub>, se cumple que &fnof;(x<sub>1</sub>) = &fnof;(x<sub>2</sub>).<br><br>La gráfica de una función constante es una recta
-                    paralela al eje de abscisas <i>X</i>.<br><br>También se puede definir una función constante a partir de la derivada. Una función &fnof; será constante si para todo punto <i>x</i> del dominio la derivada es nula, es decir &fnof;'(<i>x</i>)
-                    = 0.<br><br><img src="../imgs/fConstante.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%">
+                    <h5 class="enumeracion"><b>Unicidad del límite:</b></h5>
+                    Cuando el límite existe, el límite es único.
+                    <br><br><i>lim<sub>x &rarr; a<sup>+</sup></sub>&fnof;(&xscr;) = lim<sub>x &rarr; a<sup>-</sup></sub>&fnof;(&xscr;) = lim<sub>x &rarr; a</sub>&fnof;(&xscr;) = L</i>
+                </li><br>
+
+                <!-- Suma -->
+                <li>
+                    <h5 class="enumeracion"><b>Propiedad de la suma:</b></h5>
+                    El límite de la suma es la suma de los límites.
+                    <br><br><i>lim<sub>x &rarr; a</sub>[&fnof;(&xscr;) + &gscr;(&xscr;)] = lim<sub>x &rarr; a</sub>&fnof;(&xscr;) + lim<sub>x &rarr; a</sub>&gscr;(&xscr;)</i>
+                </li><br>
+
+                <!-- Resta -->
+                <li>
+                    <h5 class="enumeracion"><b>Propiedad de la resta:</b></h5>
+                    El límite de la resta es la resta de los límites.
+                    <br><br><i>lim<sub>x &rarr; a</sub>[&fnof;(&xscr;) - &gscr;(&xscr;)] = lim<sub>x &rarr; a</sub>&fnof;(&xscr;) - lim<sub>x &rarr; a</sub>&gscr;(&xscr;)</i>
+                </li><br>
+
+                <!-- Producto -->
+                <li>
+                    <h5 class="enumeracion"><b>Propiedad del producto:</b></h5>
+                    El límite del producto es el producto de los límites.
+                    <br><br><i>lim<sub>x &rarr; a</sub>[&fnof;(&xscr;) * &gscr;(&xscr;)] = lim<sub>x &rarr; a</sub>&fnof;(&xscr;) * lim<sub>x &rarr; a</sub>&gscr;(&xscr;)</i>
+                </li><br>
+
+                <!-- Func. Ctte. -->
+                <li>
+                    <h5 class="enumeracion"><b>Propiedad de la función constante:</b></h5>
+                    El límite de una función constante es esta misma constante.
+                    <br><br><i>lim<sub>x &rarr; a</sub>k  = k</i>
+                </li><br>
+
+                <!-- Fact. Ctte. -->
+                <li>
+                    <h5 class="enumeracion"><b>Propiedad del factor constante:</b></h5>
+                    En un límite de una constante multiplicada por una función se puede sacar la constante del límite sin que se afecte el resultado.
+                    <br><br><i>lim<sub>x &rarr; a</sub>[k * &fnof;(&xscr;)] = k * lim<sub>x &rarr; a</sub>&fnof;(&xscr;)</i>
+                </li><br>
+
+                <!-- Cociente -->
+                <li>
+                    <h5 class="enumeracion"><b>Propiedad del cociente:</b></h5>
+                    El límite de un cociente de dos funciones es el cociente de los límites de las mismas.
+                    <br><br><i>lim<sub>x &rarr; a</sub>[<sup>&fnof;(&xscr;)</sup> / <sub>&gscr;(&xscr;)</sub>] = <sup>lim<sub>x &rarr; a</sub>&fnof;(&xscr;)</sup> / <sub>lim<sub>x &rarr; a</sub>&gscr;(&xscr;)</sub></i>
+                </li><br>
+
+                <!-- Func. Potencial -->
+                <li>
+                    <h5 class="enumeracion"><b>Propiedad de la función potencial:</b></h5>
+                    El límite de una función potencial es la potencia del límite de la base elevado al exponente.
+                    <br><br><i>lim<sub>x &rarr; a</sub>[&fnof;(&xscr;)<sup>k</sup>] = [lim<sub>x &rarr; a</sub>&fnof;(&xscr;)]<sup>k</sup></i>
+                </li><br>
+
+                <!-- Func. Exponencial -->
+                <li>
+                    <h5 class="enumeracion"><b>Propiedad de la función exponencial:</b></h5>
+                    El límite de una función exponencial es la potencia de la base elevada al límite de la función exponente.
+                    <br><br><i>lim<sub>x &rarr; a</sub>[k <sup>&gscr;(&xscr;)</sup>] = k<sup> lim<sub>x &rarr; a</sub>&gscr;(&xscr;)</sup></i>
+                </li><br>
+
+                <!-- Raiz -->
+                <li>
+                    <h5 class="enumeracion"><b>Propiedad de la raíz:</b></h5>
+                    El límite una raíz, es la raíz del límite.
+                    <br><br><i>lim<sub>x &rarr; a</sub> <sup>n</sup> &radic;&fnof;(&xscr;) = <sup>n</sup> &radic;lim<sub>x &rarr; a</sub>&fnof;(&xscr;)</i>
+                </li><br>
+
+                <!-- Func. Logarítmica -->
+                <li>
+                    <h5 class="enumeracion"><b>Propiedad de la función logarítmica:</b></h5>
+                    El límite del logaritmo es del logaritmo del límite.
+                    <br><br><i>lim<sub>x &rarr; a</sub>[log<sub>k</sub> &fnof;(&xscr;)] = log<sub>k</sub> [lim<sub>x &rarr; a</sub>&fnof;(&xscr;)]</i>
                 </li>
 
-                <!-- F. de Primer Grado -->
-                <li>
-                    <h5 class="enumeracion"><b>Funciónes de Primer Grado</b></h5>
-                    <br>Son funciones que están compuestas por un escalar que multiplica a la variable independiente más una constante. Su mayor exponente es <i>x</i> elevado a <i>1</i>.<br><br> Su representación gráfica es una recta de pendiente <i>m</i>.<br><br>La
-                    <i>m</i> es la <u>pendiente</u> y la <i>n</i> la <u>ordenada</u>, o punto en donde corta la recta &fnof; al eje de ordenadas. Según los valores de <i>m</i> y <i>n</i> existen tres tipos:
-                </li><br>
-
-                <ol style="text-align: left">
-
-                    <!-- F. Identidad -->
-                    <li value="1"><b>Función Identidad:</b><br><br>La identidad es una función lineal de pendiente <u>m = 1</u> que pasa por el origen de coordenadas, es decir, por el punto <i>(0,0)</i>. Divide el primer y el tercer cuadrante en partes iguales, o sea,
-                        es su bisectriz.<br><br>La pendiente es la inclinación con respecto al eje <i>X</i> (eje de abscisas). Al ser ésta positiva <i>(m > 0)</i>, la función es creciente.<br><br>Que la pendiente de la función identidad sea <i>m = 1</i>                        significa que, si aumentamos la <i>x</i> en una unidad, la <i>y</i> también aumenta en una unidad.<br><br>Formará un <u>ángulo de 45°</u> con cualquiera de los ejes.<br>
-                        <img src="../imgs/fIdentidad.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%">
-                    </li><br><br>
-
-                    <!-- F. Lineal -->
-                    <li><b>Función Lineal:</b><br><br>Una función lineal es una <b>función polinómica</b> de grado 1 que <u>pasa por el origen de coordenadas</u>, es decir, por el punto <u>(0,0)</u>. Son funciones rectas de la forma:<br><br>
-                        <h6 class="formula"><i>&fnof;(&xscr;) = &mscr;&xscr;</i></h6>
-                        La <b>&mscr;</b> es la <b>pendiente de la recta</b>.<br><br>La pendiente es la inclinación con respecto al eje "<i>X</i>" (eje de abscisas). Si &mscr; es positiva (&mscr; > 0), entonces la función es <b><u>creciente</u></b>. En
-                        cambio, si la &mscr; es negativa (m &lt; 0), entonces la función es decreciente.<br><br>La pendiente &mscr; significa que, si aumentamos la <i>x</i> en una unidad, la <i>y</i> aumenta en &mscr; unidades. Si la &mscr; es positiva,
-                        según aumente la <i>x</i> la <i>y</i> también irá aumentando <u>(función creciente)</u>. En cambio, si &mscr; es negativa, cuando aumenta la <i>x</i> la <i>y</i> disminuirá <u>(función decreciente)</u>.<br><br><br>
-                        <img src="../imgs/fLineal.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%">
-                    </li><br><br>
-
-                    <!-- F. Afín -->
-                    <li><b>Función Afín:</b><br><br>Una función afín es una <b>función polinómica</b> de grado 1 que <u>no pasa por el origen de coordenadas</u>, o sea, por el punto <u>(0,0)</u>.<br><br>Las funciones afines son rectas definidas por la siguiente
-                        fórmula <br><br>
-                        <h6 class="formula"><i>&fnof;(&xscr;) = &mscr;&xscr; + &nscr;</i></h6>
-                        <b>Donde:</b> &mscr; y &nscr; son <b>diferentes de cero</b>.<br><br>La <b>&mscr;</b> es la <b>pendiente de la recta</b>.<br><br>La pendiente es la inclinación con respecto al eje "<i>X</i>" (eje de abscisas). Si &mscr; es positiva
-                        (&mscr; > 0), entonces la función es <b><u>creciente</u></b>. En cambio, si la &mscr; es negativa (m &lt; 0), entonces la función es decreciente.<br><br>La pendiente &mscr; significa que, si aumentamos la <i>x</i> en una unidad,
-                        la <i>y</i> aumenta en &mscr; unidades. Si la &mscr; es positiva, según aumente la <i>x</i> la <i>y</i> también irá aumentando <u>(función creciente)</u>. En cambio, si &mscr; es negativa, cuando aumenta la <i>x</i> la <i>y</i>                        disminuirá <u>(función decreciente)</u>.<br><br>La <b>ordenada en el orígen</b> es la &nscr;, es decir el punto donde la recta corta el eje de ordenadas. Las coordenadas de este punto son <i>(0 , &nscr;).</i><br><br><br>
-                        <img src="../imgs/fAfin.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%">
-                    </li><br><br>
-                </ol>
-
-                <!-- F. Cuadrática -->
-                <li>
-                    <h5 class="enumeracion"><b>Función Cuadrática</b></h5>
-                    <br>Una función cuadrática (o <b>función de segundo grado</b> es una función polinómica de grado 2, es decir el mayor exponente del polinomio &xscr; elevado a 2 <i>( &xscr; <sup>2</sup>)</i>:<br>
-                    <br>
-                    <h6 class="formula"><i>&fnof;(&xscr;) = a&xscr; <sup>2</sup> + b&xscr; + c. Siendo a &ne; 0</i></h6>
-                    Existen dos elementos fundamentales en la parábola que definen como es esta:
-                    <ol>
-                        <li value="1">
-                            El eje de simetría, que es una recta que parte de la parábola en dos ramas iguales.
-                        </li>
-                        <li>
-                            El vértice: es el punto de intersección de la parábola con el eje de simetría.
-                        </li>
-                    </ol>
-                    <br><br><br>
-                    <img src="../imgs/fCuadratica.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%"><br><br> Si a > 0, la parábola se abre hacia arriba y el vértice es el mínimo de la funcióm. En cambio si a &lt; 0,
-                    la parábola se abre hacia abajo y el vértice es el máximo de la función.
-                    <br><br>Cuanto mayor se el valor absoluto de <i>a</i>, &mid;&ascr;&mid;, más juntas estarán las ramas de la parábola.<br><br><br>
-                    <img src="../imgs/fCuadratica2.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%"><br><br> Una función cuadrática puede tener dos, una o ninguna raiz. Las raíces de una función son los elementos del
-                    dominiotal que su imágen es nula <i>&fnof;(&xscr;) = 0</i>.<br><br><br>
-                    <img src="../imgs/fCuadratica3.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="25%" height="25%">
-                </li><br>
-
-                <!-- F. Cúbica -->
-                <li>
-                    <h5 class="enumeracion"><b>Función Cúbica</b></h5>
-                    <br>Una función cúbica (o <b>función de tercer grado</b> es una función polinómica de grado 3, es decir el mayor exponente del polinomio &xscr; elevado a 3 <i>( &xscr; <sup>3</sup>)</i>:<br>
-                    <br>
-                    <h6 class="formula"><i>&fnof;(&xscr;) = a&xscr; <sup>3</sup> + b&xscr; <sup>2</sup> + c&xscr; + d. Siendo a &ne; 0</i></h6>
-                    Una función cúbica puede tener tres, dos o una raíz. Las raíces de una función son los elementos del dominio tal que su imagen es nula (&fnof;(&xscr;) = 0).
-                    <br><br><br>
-                    <img src="../imgs/fCubica.jpg" class="rounded mx-auto d-block" alt="[Ejemplo_funcion]" width="30%" height="35%">
-                </li><br>
             </ol>
         </section>
     </body>
